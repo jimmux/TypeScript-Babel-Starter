@@ -1,4 +1,10 @@
-# TypeScript-Babel-Starter
+# TypeScript-Babel-Starter (with purpose-built Webpack config and targeted broswer support)
+
+# Why the fork?
+
+This is a proof of concept for an incremental migration strategy from just-a-bunch-of-js-scripts to more modern front-end code. The intention is to allow a collection of existing plain JavaScript files (that are hopefully safe to use on IE11), to gradually be converted to TypeScript.
+
+The build will use Babel to provide polyfills for required browser support. Webpack will be used somewhat unconventionally to bundle each source file in the original directory to a matching JavaScript file, so it will work with no changes to the existing site or active changes to configuration files.
 
 # What is this?
 
