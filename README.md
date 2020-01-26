@@ -1,12 +1,10 @@
-# TypeScript-Babel-Starter
+# TypeScript-Babel-Starter (with purpose-built Webpack config and targeted broswer support)
 
-# What is this?
+# Why the fork?
 
-This is a small sample repository that uses Babel to transform TypeScript to plain JavaScript, and uses TypeScript for type-checking.
-This README will also explain step-by-step how you can set up this repository so you can understand how each component fits together.
+This is a proof of concept for an incremental migration strategy from just-a-bunch-of-js-scripts to more modern front-end code. The intention is to allow a collection of existing plain JavaScript files (that are hopefully safe to use on IE11), to gradually be converted to TypeScript.
 
-For simplicity, we've used `babel-cli` with a bare-bones TypeScript setup, but we'll also demonstrate integration with JSX/React, as well as adding bundlers into the mix.
-Specifically, we'll show off integration with Webpack for if you're deploying an application, and Rollup for if you're producing a library.
+The build will use Babel to provide polyfills for required browser support. Webpack will be used somewhat unconventionally to bundle each source file in the original directory to a matching JavaScript file, so it will work with no changes to the existing site or active changes to configuration files.
 
 # How do I use it?
 
