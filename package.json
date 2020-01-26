@@ -7,7 +7,7 @@
     "type-check:watch": "yarn run type-check -- --watch",
     "build": "yarn run build:types && yarn run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\"",
+    "build:js": "babel src --out-dir dist --extensions \".ts\"",
     "bundle": "webpack"
   },
   "devDependencies": {
@@ -37,10 +37,7 @@
           "corejs": 3
         }
       ],
-      [
-        "minify",
-        {}
-      ]
+      "minify"
     ],
     "plugins": [
       "@babel/proposal-class-properties",

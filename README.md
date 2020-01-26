@@ -1,4 +1,4 @@
-# TypeScript-Babel-Starter (with purpose-built Webpack config and targeted broswer support)
+# TypeScript-Babel-Starter (with purpose-built Webpack config and targeted browser support)
 
 # Why the fork?
 
